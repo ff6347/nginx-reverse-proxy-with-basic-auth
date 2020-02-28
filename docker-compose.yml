@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  nginx:
+    image: nginx
+    build:
+      context: .
+      args:
+        - USER=test
+        - PW=test
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+  api:
+    image: api
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+
