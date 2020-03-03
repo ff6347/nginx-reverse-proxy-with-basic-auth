@@ -1,4 +1,4 @@
-FROM node:10.16.3-alpine as builder
+FROM node:10.19.0-alpine as builder
 WORKDIR /usr/app
 COPY ./package*.json ./
 RUN npm ci --quiet
