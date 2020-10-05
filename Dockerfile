@@ -1,4 +1,4 @@
-FROM nginx:1.19.2-alpine as gateway
+FROM nginx:1.19.3-alpine as gateway
 LABEL Name=docker-create-file Version=0.0.1
 ARG USER
 ARG PW
